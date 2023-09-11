@@ -938,7 +938,7 @@
 .ti-rocket:before {
 	content: "\e730";
 }
-.ti-pinterest:before {
+.ti-github:before {
 	content: "\e731";
 }
 .ti-new-window:before {
@@ -1040,7 +1040,7 @@
 .ti-reddit:before {
 	content: "\e752";
 }
-.ti-pinterest-alt:before {
+.ti-github-alt:before {
 	content: "\e753";
 }
 .ti-microsoft-alt:before {
