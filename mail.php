@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validate the email (you can use a library like filter_var for more thorough validation)
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Compose and send the email (you should configure your server for sending email)
-        $to = 'younesghu44@gmail.com'; // Replace with your email address
+        $to = 'younesghu44@gmail.com';
         $subject = 'Contact Form Submission';
         $headers = "From: $email\r\n";
         $message = "Name: $name\r\nEmail: $email\r\nMessage:\r\n$message";
@@ -27,6 +27,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Return a JSON response to the frontend
     header('Content-Type: application/json');
     echo json_encode($response);
+
+    // Redirect after sending the JSON response
+    header("Location: index.html");
 } else {
     http_response_code(405); // Method Not Allowed
     echo 'Method not allowed';
