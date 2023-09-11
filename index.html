@@ -197,19 +197,19 @@
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form action="contactform.php" class="contact-form col-md-10 col-lg-8 m-auto" method="post">
+            <form action="contactform.php" class="contact-form col-md-10 col-lg-8 m-auto" method="POST">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" name="username" size="50" class="form-control" placeholder="Your Name" required>                 
+                        <input type="text" name="name" size="50" class="form-control" placeholder="Your Name" required>                 
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" name="useremail" class="form-control" placeholder="Enter Email"requried>                 
+                        <input type="email" name="email" class="form-control" placeholder="Enter Email"requried>                 
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="usermessage" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                        <textarea name="message" rows="6"   class="form-control" placeholder="Write Something"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" name="send" value="Send Message" class="btn btn-outline-primary rounded">                  
+                        <input type="submit" name="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
                     </div>
                 </div>  
             </form><!-- end of contact form -->
@@ -228,6 +228,7 @@
         </footer>
     </div> <!-- end of page footer -->
 
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
         <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
         <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>

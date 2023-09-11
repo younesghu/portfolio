@@ -57,6 +57,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
@@ -585,6 +586,16 @@ pre code {
     max-width: 1140px;
   }
 }
+.thankyou{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.thankyou a {
+  text-decoration: underline;
+  color: #695aa6;
+}
+
 
 .container-fluid {
   width: 100%;
